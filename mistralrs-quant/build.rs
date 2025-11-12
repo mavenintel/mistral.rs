@@ -334,6 +334,7 @@ fn main() -> Result<(), String> {
                 .arg("-Wall")
                 .arg("-Wextra")
                 .arg("-O3")
+                .arg("-std=macos-metal2.3")
                 .arg("-c")
                 .arg("-w");
             for metal_file in METAL_SOURCES {
